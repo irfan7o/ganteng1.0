@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Routes } from './components/Routes';
+import { Search } from './components/Search';
 
 const App = () => {
   const [darkTheme, setDarkTheme] = useState(false);
@@ -14,8 +15,9 @@ const App = () => {
         <Routes />
         <Footer />
       </div>
+      <Search />
     </div>
   );
 }
 
-export default App
+export default App;
